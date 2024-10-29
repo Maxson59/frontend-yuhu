@@ -95,7 +95,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const token = localStorage.getItem('accessToken');
             if (!token) {
-                window.location.href = 'views/index.html';
+                window.location.href = '/';
                 return;
             }
 
@@ -196,7 +196,7 @@
         function logout() {
             localStorage.removeItem('accessToken');
             localStorage.removeItem('refreshToken');
-            window.location.href = 'views/index.html';
+            window.location.href = '/';
         }
     </script>
 </body>
